@@ -68,4 +68,10 @@
 - (void)showNextPhotoAnimated:(BOOL)animated;
 - (void)showPreviousPhotoAnimated:(BOOL)animated;
 
+// Expose the action button. If the user needs custom action by implementing
+// actionButtonPressedForPhotoAtIndex, The action button is needed for the
+// anchor point for the popover
+// muquit@muquit.com May-02-2015
+- (UIBarButtonItem *)getActionButton;
+
 @end

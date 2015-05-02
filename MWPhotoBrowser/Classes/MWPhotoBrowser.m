@@ -1118,6 +1118,15 @@
     [self jumpToPageAtIndex:_currentPageIndex+1 animated:animated];
 }
 
+// Return the action button. If the user needs custom action by implementing
+// actionButtonPressedForPhotoAtIndex, The action button is needed for the
+// anchor point for the popover
+// muquit@muquit.com May-02-2015
+- (UIBarButtonItem *)getActionButton
+{
+    return _actionButton;
+}
+
 #pragma mark - Interactions
 
 - (void)selectedButtonTapped:(id)sender {
